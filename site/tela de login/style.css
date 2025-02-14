@@ -41,7 +41,7 @@ form {
   margin-top: 40px;
   position: relative;
   border-radius: 30px;
-  box-shadow: 0 0 7px 0 blueviolet;
+  box-shadow: 0 0 7px 0 #23232e;
 }
 
 .buttonsForm button {
@@ -56,7 +56,7 @@ form {
   position: absolute;
   width: 122.4px;
   height: 100%;
-  background: linear-gradient(to right, #5956e9, #a963f8);
+  background: linear-gradient(to right, #23232e, #23232e);
   border-radius: 30px;
   transition: .3s;
 }
@@ -71,7 +71,7 @@ input[type="text"], input[type="password"] {
 }
 
 input[type="button"] {
-  background: #660fc8;
+  background: #23232e;
   color: white;
   border-radius: 30px;
   width: 100%;
