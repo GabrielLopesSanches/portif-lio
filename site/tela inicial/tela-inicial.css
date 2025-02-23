@@ -27,21 +27,38 @@
     background: #23232e;
     height: 8vh;
   }
-  
-  main {
-    background: url("bg.jpg") no-repeat center center;
-    background-size: cover;
-    height: 92vh;
+
+  .davi-bola{
+    position: absolute;
+    top: 30%;
+    left: 87%;
+    transform: translate(-50%, -50%);
+    clip-path: circle(50% at 50% 50%);
+    height: 300px;
+    width: auto;
   }
+  /* Foto do Davi some me mobile */
+  @media (max-width: 999px) {
+    .davi-bola {
+        display: none; 
+    }
+    .logo {
+        font-size: 8vw; 
+    }
+    .nav-list {
+        font-size: 4vw;
+    }
+}
   
   .nav-list {
     list-style: none;
     display: flex;
+    
   }
   
   .nav-list li {
-    letter-spacing: 3px;
-    margin-left: 32px;
+    letter-spacing: 2px;
+    margin-left: 20px;
   }
   
   .mobile-menu {
@@ -109,3 +126,43 @@
   .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
   }
+  .sobre {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;         
+    height: 100vh;              
+    padding: 0 20px;    
+    background: url('../img/davizaoo.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;      
+}
+.sobre .col-lg-6 {
+    max-width: 600px;           
+    width: 100%;                
+    margin: 0 auto;            
+}
+.my-title {
+    font-size: 2.5rem;
+    text-align: left;
+    color: black;
+}
+
+.my-subtitle {
+    font-size: 1.5rem;
+    text-align: left;
+    color: white;
+}
+
+.sobre-mim-text {
+    font-size: 2rem;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.paragrafo-1 {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: left;
+    color: white;
+}
