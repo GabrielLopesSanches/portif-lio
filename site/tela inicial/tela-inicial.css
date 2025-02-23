@@ -29,9 +29,20 @@
   }
   
   main {
-    background: url("site/img/davizao.j") no-repeat center center;
+    background: url('../img/davizaoo.jpg') no-repeat center center;
     background-size: cover;
-    height: 92vh;
+    background-attachment: fixed;
+    height: 100%;
+  }
+
+  .davi-bola{
+    position: absolute;
+    top: 30%;
+    left: 87%;
+    transform: translate(-50%, -50%);
+    clip-path: circle(50% at 50% 50%);
+    height: 300px;
+    width: auto;
   }
   
   .nav-list {

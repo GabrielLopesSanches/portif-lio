@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="tela-de-login.css">
+  <script src="https://kit.fontawesome.com/cf6fa412bd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="buttonsForm">
+      <div class="btnColor"></div>
+      <button id="btnSignin">Login</button>
+      <button id="btnSignup">Criar Conta</button>
+    </div>
+
+    <form id="signin">
+      <input type="text" placeholder="Email" required />
+      <i class="fas fa-envelope iEmail"></i>
+      <input type="password" placeholder="Senha" required />
+      <i class="fas fa-lock iPassword"></i>
+      <div class="divCheck">
+        <input type="checkbox" />
+        <span>Lembrar senha</span>
+      </div>
+      <a href="" target="_blank"><input type="button" value="Enviar" src="http://127.0.0.1:5500/site/tela%20inicial/tela-inicial.html"/></a>
+    </form>
+
+    <form id="signup">
+      <input type="text" placeholder="Email" required />
+      <i class="fas fa-envelope iEmail"></i>
+      <input type="password" placeholder="Senha" required />
+      <i class="fas fa-lock iPassword"></i>
+      <input type="password" placeholder="Senha" required />
+      <i class="fas fa-lock iPassword2"></i>
+      <div class="divCheck">
+        <input type="checkbox" required />
+        <span>Termos</span>
+      </div>
+      <a href="" target="_blank"><input type="button" value="Enviar"/></a>
+    </form>
+  </div>
+  <video autoplay muted loop id="video-background">
+    <source src="../img/davi boss.mp4" type="video/mp4">
+</video>
+  <script src="index.js"></script>
+</body>
+</html>
