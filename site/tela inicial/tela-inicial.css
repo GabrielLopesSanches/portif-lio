@@ -1,179 +1,97 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  a {
-    color: #fff;
-    text-decoration: none;
-    transition: 0.3s;
-  }
-  
-  a:hover {
-    opacity: 0.7;
-  }
-  
-  .logo {
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    background: #23232e;
-    height: 8vh;
-  }
-
-  .davi-bola{
-    position: absolute;
-    top: 30%;
-    left: 87%;
-    transform: translate(-50%, -50%);
-    clip-path: circle(50% at 50% 50%);
-    height: 300px;
-    width: auto;
-  }
-  /* Foto do Davi some me mobile */
-  @media (max-width: 999px) {
-    .davi-bola {
-        display: none; 
-    }
-    .logo {
-        font-size: 8vw; 
-    }
-    .nav-list {
-        font-size: 4vw;
-    }
-}
-  
-  .nav-list {
-    list-style: none;
-    display: flex;
-    
-  }
-  
-  .nav-list li {
-    letter-spacing: 2px;
-    margin-left: 20px;
-  }
-  
-  .mobile-menu {
-    display: none;
-    cursor: pointer;
-  }
-  
-  .mobile-menu div {
-    width: 32px;
-    height: 2px;
-    background: #fff;
-    margin: 8px;
-    transition: 0.3s;
-  }
-  
-  @media (max-width: 999px) {
-    body {
-      overflow-x: hidden;
-    }
-    .nav-list {
-      position: absolute;
-      top: 8vh;
-      right: 0;
-      width: 50vw;
-      height: 92vh;
-      background: #23232e;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-      transform: translateX(100%);
-      transition: transform 0.3s ease-in;
-    }
-    .nav-list li {
-      margin-left: 0;
-      opacity: 0;
-    }
-    .mobile-menu {
-      display: block;
-    }
-  }
-  
-  .nav-list.active {
-    transform: translateX(0);
-  }
-  
-  @keyframes navLinkFade {
-    from {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
-  .mobile-menu.active .line1 {
-    transform: rotate(-45deg) translate(-8px, 8px);
-  }
-  
-  .mobile-menu.active .line2 {
-    opacity: 0;
-  }
-  
-  .mobile-menu.active .line3 {
-    transform: rotate(45deg) translate(-5px, -7px);
-  }
-  .sobre {
-    display: flex;
-    justify-content: flex-start; 
-    align-items: center;         
-    height: 100vh;              
-    padding: 0 20px;    
-    background: url('../img/davizaoo.jpg') no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100%;      
-}
-.sobre .col-lg-6 {
-    max-width: 600px;           
-    width: 100%;                
-    margin: 0 auto;            
-}
-.my-title {
-    font-size: 2.5rem;
-    text-align: left;
-    color: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.my-subtitle {
-    font-size: 1.5rem;
-    text-align: left;
-    color: white;
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #0f172a;
+  color: #e5e7eb;
 }
 
-.sobre-mim-text {
-    font-size: 2rem;
-    margin-top: 20px;
-    text-align: left;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-.paragrafo-1 {
-    font-size: 1rem;
-    line-height: 1.5;
-    text-align: left;
-    color: white;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
 }
-.linguagens{
-  font-size: 2rem;
-  margin-top: 20px;
-  text-align: left;
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
 }
-.linguagens-text{
+
+.nav-list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+  color: #94a3b8;
+}
+
+.hero p {
   font-size: 1rem;
-  line-height: 1.5;
-  text-align: left;
-  color: white;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: #2563eb;
+  border-radius: 6px;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 1px solid #2563eb;
+}
+
+.section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.section h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 8px;
 }
