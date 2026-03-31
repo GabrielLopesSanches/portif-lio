@@ -1,82 +1,87 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gabriel Lopes | Portfólio</title>
+  <title>Gabriel Lopes | Portfolio</title>
   <link rel="stylesheet" href="site/tela-inicial/tela-inicial.css">
-  <meta name="description"
-      content="Portfólio de Gabriel Lopes, Desenvolvedor Front-End e estudante de Ciência da Computação. Projetos em HTML, CSS, JavaScript e Python.">
 
-<meta name="author" content="Gabriel Lopes">
-<meta name="robots" content="index, follow">  
+  <meta
+    name="description"
+    content="Gabriel Lopes' portfolio. Computer Science student focused on front-end development, building projects with HTML, CSS, JavaScript, and Python."
+  >
+  <meta name="author" content="Gabriel Lopes">
+  <meta name="robots" content="index, follow">
 </head>
 
 <body>
+  <header>
+    <nav class="nav">
+      <a class="logo" href="#">Gabriel Lopes</a>
 
-<header>
-  <nav class="nav">
-    <a class="logo" href="#">Gabriel Lopes</a>
+      <div class="mobile-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
 
-    <div class="mobile-menu">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
+      <ul class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <ul class="nav-list">
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#projetos">Projetos</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
-  </nav>
-</header>
+  <main>
+    <section class="hero">
+      <h1>Gabriel Lopes</h1>
+      <h2>Computer Science Student | Front-End Developer</h2>
+      <p>HTML • CSS • JavaScript • Python</p>
 
-<main>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="https://github.com/GabrielLopesSanches" target="_blank" rel="noopener noreferrer" class="btn outline">GitHub</a>
+      </div>
+    </section>
 
-<section class="hero">
-  <h1>Gabriel Lopes</h1>
-  <h2>Desenvolvedor Front-End</h2>
-  <p>HTML • CSS • JavaScript • Python</p>
+    <section id="about" class="section">
+      <h3>About Me</h3>
+      <p>
+        I am a Computer Science student at Universidade Presbiteriana Mackenzie,
+        focused on front-end development and practical programming projects.
+        I enjoy building clean, functional interfaces and strengthening my skills
+        through hands-on experience with HTML, CSS, JavaScript, and Python.
+      </p>
+    </section>
 
-  <div class="hero-buttons">
-    <a href="#projetos" class="btn">Ver Projetos</a>
-    <a href="https://github.com/GabrielLopesSanches" target="_blank" class="btn outline">GitHub</a>
-  </div>
-</section>
+    <section id="projects" class="section">
+      <h3>Projects</h3>
 
-<section id="sobre" class="section">
-  <h3>Sobre mim</h3>
-  <p>
-    Sou estudante de Ciência da Computação na Universidade Presbiteriana Mackenzie.
-    No momento tenho foco em desenvolvimento front-end e estou construindo projetos práticos
-    utilizando HTML, CSS, JavaScript e Python.
-  </p>
-</section>
+      <div class="projects">
+        <div class="card">
+          <h4>Python Calculator</h4>
+          <p>
+            A calculator developed in Python to practice programming logic,
+            user input handling, and code organization.
+          </p>
+          <a href="https://github.com/GabrielLopesSanches/calculadora-python" target="_blank" rel="noopener noreferrer">
+            View on GitHub
+          </a>
+        </div>
+      </div>
+    </section>
 
-<section id="projetos" class="section">
-  <h3>Projetos</h3>
+    <section id="contact" class="section">
+      <h3>Contact</h3>
+      <p>Email: lopessanchesgabriel@gmail.com</p>
+      <p>
+        <a href="https://github.com/GabrielLopesSanches" target="_blank" rel="noopener noreferrer">GitHub</a> |
+        <a href="https://www.linkedin.com/in/gabriel-sanches-932703232" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </p>
+    </section>
+  </main>
 
-  <div class="projects">
-    <div class="card">
-      <h4>Calculadora em Python</h4>
-      <p>Projeto focado em lógica e estrutura de código.</p>
-      <a href="https://github.com/GabrielLopesSanches/calculadora-python" target="_blank">Ver no GitHub</a>
-    </div>
-  </div>
-</section>
-
-<section id="contato" class="section">
-  <h3>Contato</h3>
-  <p>Email: lopessanchesgabriel@gmail.com</p>
-  <p>
-    <a href="https://github.com/GabrielLopesSanches" target="_blank" rel="noopener noreferrer">GitHub</a> |
-    <a href="https://www.linkedin.com/in/gabriel-sanches-932703232" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-  </p>
-</section>
-
-</main>
-
-<script src="site/tela-inicial/mobile-navbar.js" defer></script>
+  <script src="site/tela-inicial/mobile-navbar.js" defer></script>
 </body>
 </html>
